@@ -1,0 +1,18 @@
+What is machine learning?
+
+Multiple definitions - 
+1. A set of methods that can detect patterns in some data and use the patterns to make predictions about other data. - Kevin Murphy book.
+2. Is a science of getting machines to learn without being explicitly programmed. - Andrew Ng course - Arthur Samuel
+3. A machine is said to learn from experience E wrt a task T if its performance P on task T improves with experience E. - Wikipedia - Tom Mitchell, CMU
+
+Supervised Learning (predictive)
+Goal is to find a mapping between input A to output B (test set) given a labeled set(training set) of input-output pairs.
+1. Classification problem  : when the output B is a discrete/categorical value (yes/no, 1/2/3)
+2. Regression problem : when the output B is a continuous/real-valued value(0-100%, <=Rs. 7000)
+
+Unsupervised Learning (descriptive)
+Goal is to find patterns in a unlabeled data set X.
+Clustering: find clusters of data that are similar in some way.
+
+Reinforcement Learning
+Goal is to find the right answer/behaviour while being given occasional rewards/punishments.
