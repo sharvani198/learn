@@ -1,0 +1,26 @@
+Represent a model with a linear equation
+
+Linear Regression with one variable can be written as a mapping function for the training dataset- 
+        y = wx + b
+where y: set of target/labels/annotations
+      x: set of input/feature/variable
+      w: matrix of weights
+      b: set of bias values
+      
+How to choose the parameters or the weights and bias values? 
+Using a cost function (error rate)
+
+Given a dataset set (X,Y) with n values and a mapping function/hypothesis
+  y` = wx + b
+  where y` is a prediction of the target value for the given parameters
+The goal is to minimize the mean squared error represented by
+E = 1/2m * sum((y`- y)^2)
+
+Gradient Descent
+An algorithm to minimize the cost function.
+1. Pick a random value for the parameters
+2. Change value according to change in cost 
+    v1 = v1 - a*dF(v)/dv1
+    where v = parameter
+          a = learning rate
+          dF/dv1 = derivative; change in cost wrt change in parameter. 
