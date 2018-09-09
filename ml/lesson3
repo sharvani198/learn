@@ -1,0 +1,32 @@
+Multiple features
+
+Multivariate linear regression.
+for 3 features in the training set the prediction is 
+  y` = w1*x1 + w2*x2 + w3*x3 + b
+can also be written as
+  y` = WX + b
+  where W = vector of all weights (w1,w2,w3)
+        X = vector of all features (x1,x2,x3)
+        
+gradiant descent will be 
+    w(i) = w(i) - a*dF(w)/dw(i)
+    where w(i) is the i th value in the weights vector
+  
+Feature scaling 
+   make sure that all feature values are on a similar scale (usually between -1 and 1)
+   this will make it converge faster
+   one way is to divide each faute value by the maximum value for that feature
+      x  = rgb/255 for image pixels 
+   mean normalization subracts the avg value from the feature
+      x= (rgb - 127.5)/255
+
+Note:
+  1. Make sure that the error rate is decreasing with every iteration/epoch. Otherwise gradient descent is not working.
+  2. when the error rate decreses by 0.0001 per iteration, then it has converged.
+  3. if learning rate is too small : slow convergence. if it is too large, it might not converge 
+  4. See if any new feature can be defined from the existing one that makes more sense.
+  5. If the linear function does not seem to define the data very well, then try a polynomial . This becomes polynomial regression
+      for a cubic fucntion of a single feature : y` = w1*x1 + w2*x2 + w2*x3 + b
+                                                 where x1 = x
+                                                      x2 = x^2
+                                                      x3 = x^3
