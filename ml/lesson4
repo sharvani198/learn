@@ -1,0 +1,26 @@
+Classification
+
+Binary or multi class
+
+Linear regression will not give good predictions for classification problems. As we want y` to be one of the classes use logistic regresion instead.
+
+Logistic Regression 
+  Apply the sigmoid function(logistic function) to the value of linear regression to get binary value
+  so y` = f(wx+b)
+    where f(x) = 1/(1+e^-x) is the sigmoid function
+          y` is the probability of y=1
+     
+Basically the vale of linear regression , a linear equation, will represent the decision boundary for the classification. 
+A sigmoid, or an other similar fucntion. just converts the real valued prediction into a discrate class value.
+Note: the decision boundary can become non linear when the regression function is non linear.
+
+Cost Function
+
+ Cost = { -log(y`)     if y=1
+        { -log(1-y`)   if y=0
+ Cost = -ylog(y`) - (1-y`)log(1-y`)
+ 
+ Multiclass
+ 
+ one-vs-all method of splitting the multiple classes into pairs and use binary classification on each. So we'll get multiple logictic regression functions.
+ 
