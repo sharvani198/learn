@@ -1,0 +1,7 @@
+Underfitting - high bias - or when the model does not fitt the train data very well and is too general.
+Overfitting - high variance -  or when the model fits the training set very well but does not generalize well on real data.
+
+Sometimes overfitting may happen due to too many features. 
+In that case we can introdruce an extra cost on some of the weights. This regularization parameter determines how much the costs of our weight parameters are inflated.
+
+Another popular algorithm to use to find weights is the Normal Equation.
